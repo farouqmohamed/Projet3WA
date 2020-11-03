@@ -1,0 +1,21 @@
+<section class="container">
+
+                <form action="<?= $requestUrl ?>/contact" method="POST">
+                    
+                    <label class="nom" for="firstname">Nom</label><br>
+                        <input type="text" id="nom" name="firstname" placeholder="Votre nom.." style="width: 800px" required> <br>
+
+                    <label class="prenom" for="name">Prénom</label><br>
+                        <input type="text" id="prenom" name="name" placeholder="Votre prénom.." style="width: 800px" required> <br>
+
+                    <label class="mail" for="email">Adresse mail</label><br>
+                        <input type="email" id="mail" name="email" placeholder="Votre adresse mail.." style="width: 800px" required> <br>
+
+
+                    <label class="message" for="message">Votre message</label><br>
+                        <textarea id="message" name="message" placeholder="Votre message.." style="height:200px; width: 800px" required> </textarea><br>
+
+                    <input type="submit" value="Envoyer" style="width: 800px">
+                </form>
+                
+</section>

@@ -1,0 +1,57 @@
+<div class="containerdevis">
+
+            <form action="<?= $requestUrl ?>/devis" method="POST">
+                
+                <label for="civilite" class="votrecivilite">Votre civilité</label><br/>
+                <select name="civilite">
+                    <option value="monsieur">Monsieur</option>
+                    <option value="madame">Madame</option>
+                </select><br/>
+
+                <label for="name" class="nom">Nom</label> <br>
+                <input type="text" id="nom" name="name" placeholder="Votre nom.." style="width: 800px" required> <br>
+
+                <label for="tel" class="tel">Téléphone</label> <br>
+                <input type="tel" id="telephone" name="tel" placeholder="Votre numéro de téléphone.."
+                    style="width: 800px" required> <br>
+
+                <label for="email" class="mail">Adresse mail</label> <br>
+                <input type="email" id="email" name="email" placeholder="Votre adresse mail.." style="width: 800px"
+                    required><br>
+
+                <label for="typesite" class="typesite">Quelle est le type de site que vous souhaitez créé ?</label><br>
+                <select id="typesite" name="typesite" style="width: 800px">
+                    <option value="blog">Blog</option>
+                    <option value="ecommerce">Site E-commerce</option>
+                    <option value="siteweb">Site web</option>
+                    <option value="autre">Autre</option>
+                </select><br><br>
+
+                <label for="nbrpage" class="nbrpage">Avez-vous une idée de nombre de pages que votre site comportera
+                    ?</label><br>
+                <select id="nbrpage" name="nbrpage" style="width: 800px">
+                    <option value="null" selected> </option>
+                    <option value="oui">Oui</option>
+                    <option value="non">Non</option>
+                </select> <br> <br>
+
+                <label for="siOui" class="labelpage" id="labelOui">Nombre de page : </label><br>
+                <select id="siOui" name="siOui" style="width: 800px; display: none;">
+                </select> <br> <br>
+
+                <label for="message" class="message">Pouvez-vous décrire votre projet en quelques lignes ? </label> <br>
+                <textarea id="message" name="message" placeholder="Votre message.." style="height:100px ; width: 800px;"
+                    required>
+                            </textarea> <br>
+
+                <input type="submit" value="Envoyer votre devis" style="width: 800px">
+
+
+
+            </form>
+
+
+
+        </div>
+
+<script src="<?= $wwwUrl ?>/js/ajoutInput.js"></script>

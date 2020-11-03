@@ -1,0 +1,137 @@
+<form>
+      
+      <div id="result" style="display: hidden;"></div>
+      
+      <div id="tableau">
+        <div id="warning" style="display: none;">
+        </div>
+          <!----- Type de site ------>
+        
+        <div class="typedesite"> 
+        
+        <p class="typedesite"> Type de sites : </p>
+        
+        <div class="lestypes">
+          
+          <div class="option">
+					  <input type="checkbox" id="blog" name="typesite">
+						  <label for="blog">Blog</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="ecommerce" name="typesite">
+						  <label for="ecommerce">Site E-commerce</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="siteweb" name="typesite">
+						  <label for="siteweb">Site Web</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="autres" name="typesite">
+						  <label for="autres">Autres</label>
+				  </div>
+          
+        </div>
+        
+        </div> 
+        
+                    <!----- Nombre de page ------>
+    
+      <div class="nombrepage">
+        
+				<p class="nbrpages">Nombre de pages :</p>
+							
+				<div class="les-options">
+											
+					<label for="nbrPage">
+						<input type="number" name="nbrPage" id="nbrPage" min=1 max=50 required/>
+					</label>						
+											
+        </div>
+      
+        </div>
+                    <!----- Logo ------>
+        
+        <div class="logo">
+          
+          <p>Souhaitez-vous faire réaliser un logo pour le site ?</p>
+          
+          <div class="option">
+					  <input type="checkbox" id="oui" name="logo">
+						  <label for="oui">Oui</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="non" name="logo">
+						  <label for="non">Non</label>
+				  </div>
+          
+          
+        </div>
+        
+                      <!----- Graphisme------>
+        
+        <div class="graphisme">
+          
+        <p> Niveau de graphisme attendu </p>
+         
+            <p class="pgraphisme">Normal : le rendu graphique sera acceptable. </p> 
+            <p class="pgraphisme">Avancé : vous souhaitez un bon rendu graphique (plus coûteux que Normal). </p> 
+            <p class="pgraphisme">Sur-mesure : vous serez intraitable sur la qualité du rendu graphique (plus coûteux qu'Avancé).</p>
+     
+  
+          <div class="option">
+					  <input type="checkbox" id="normal" name="graphisme">
+						  <label for="oui">Normal</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="avance" name="graphisme">
+						  <label for="non">Avancé</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="surmesure" name="graphisme">
+						  <label for="non">Sur-mesure</label>
+				  </div>
+				  
+				  </div>
+        
+        
+                  <!----- Pour qui le site sera developpée ------>
+          
+        <div class="pourqui">
+        
+          <p>Pour qui le site sera-t-il développée ?</p>
+        
+          <div class="option">
+					  <input type="checkbox" id="particulier" name="particulier">
+						  <label for="oui">Un Particulier</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="association" name="association">
+						  <label for="non">Une Association</label>
+				  </div>
+				  
+				  <div class="option">
+					  <input type="checkbox" id="administration" name="administration">
+						  <label for="non">Une Administration</label>
+				  </div>
+        
+          <div class="option">
+					  <input type="checkbox" id="entreprise" name="entreprise">
+						  <label for="non">Une Entreprise</label>
+				  </div>
+          
+        </div>
+        
+        <button id="button1"> LANCER LE CALCUL</button>
+        
+      </div>
+      
+    </form>
+
+<script src="<?= $wwwUrl ?>/js/estimePrice.js"></script>

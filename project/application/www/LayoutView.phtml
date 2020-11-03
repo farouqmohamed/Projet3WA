@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Feuilles de styles de l'application -->
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/normalize-3.0.3.min.css">
+    <link rel="stylesheet" href="<?= $wwwUrl ?>/css/style.css">
+    
+    <!-- JavaScript de l'application -->
+    <script src="<?= $wwwUrl ?>/js/utilities.js"></script>
+
+    <title>DigitalWebMo - Estimation Tarif</title>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <h1>Digital<span>Web</span>Mo</h1>
+
+        <nav>
+            <a href="<?= $requestUrl ?>/">ACCUEIL</a>
+            <a href="<?= $requestUrl ?>/contact">CONTACT</a>
+            <a href="<?= $requestUrl ?>/devis">DEMANDE DE DEVIS</a>
+        </nav>
+    
+        <div id="titre">
+            <?php
+                $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                if($actual_link === 'http://mohamedfarouq.sites.3wa.io/project/index.php/' || $actual_link === 'http://mohamedfarouq.sites.3wa.io/project/index.php' || $actual_link === 'http://mohamedfarouq.sites.3wa.io/project/' || $actual_link === 'http://mohamedfarouq.sites.3wa.io/project/index.php/estimerTarif' ) {
+            ?>
+            <h2>ESTIMATION TARIF</h2>
+            <br>
+            <h3> Evaluez le prix de création de votre projet de site internet </h3>
+            <h3> Notre outil vous permet d'obtenir une estimation fiable, personnalisée et à jour</h3>
+            <?php } if($actual_link === 'http://mohamedfarouq.sites.3wa.io/project/index.php/devis' ) { ?>
+            <h2>DEMANDE DE DEVIS</h2>
+            <br>
+            <h3> Demandez votre devis gratuitement en expliquant votre projet </h3>
+            <h3> DigitalWebMo, c’est les avantages d’une agence de communication aux tarifs d’un indépendant</h3>
+            <?php } if($actual_link === 'http://mohamedfarouq.sites.3wa.io/project/index.php/contact' ) { ?>
+                <h2>CONTACT</h2>
+                <br>
+                <h3> Créer un site web où vous avez d’autres demandes ou des réclamations </h3>
+                <h3> N’hésitez pas à nous en faire part en utilisant ce formulaire</h3>
+            <?php } ?>
+        </div>
+
+
+    </header>
+
+
+<main>
+    <!-- Affichage du template lié à la vue -->
+    <?php include $this->viewData['template']; ?>
+</main>
+
+<!-- Pied de page commun -->
+<footer>
+
+            <p>2020 DigitalWebMo </p>
+
+    </footer>
+    
+</body>
+
+</html>
